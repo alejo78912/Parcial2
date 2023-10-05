@@ -1,0 +1,31 @@
+<app-sidenav></app-sidenav>
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Información de la Tarjeta de Crédito-Agregar</h2>
+      <form (ngSubmit)="submitForm()" #creditCardForm="ngForm">
+        <div class="form-group">
+          <label for="titular">Titular:</label>
+          <input type="text" class="form-control" id="titular" name="titular" [(ngModel)]="CreditCard.titular" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fecha">Fecha de Expiración (MM/YY):</label>
+            <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="CreditCard.fecha" pattern="^(0[1-9]|1[0-2])\/\d{2}$" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cvv">CVV:</label>
+            <input type="text" class="form-control" id="cvv" name="cvv" [(ngModel)]="CreditCard.cvv" pattern="^\d{3}$" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cvv">numero:</label>
+            <input type="text" class="form-control" id="cvv" name="cvv" [(ngModel)]="CreditCard.numero" pattern="^\d{3}$" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+  

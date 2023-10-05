@@ -1,0 +1,27 @@
+body {
+    padding-top: 56px;
+}
+
+/* Estilo personalizado para el sidenav */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #007bff;
+}

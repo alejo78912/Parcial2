@@ -1,0 +1,27 @@
+<br>
+<br>
+<div style="font-weight: bolder;">Inventario de tarjetas </div>
+<br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Número de tarjeta</th>
+        <th>Nombre del titular</th>
+        <th>CVV</th>
+        <th>fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let CreditCard of tarjetas">
+        <td>{{CreditCard.numero}}</td>
+        <td>{{CreditCard.titular}}</td>
+        <td>{{CreditCard.cvv}}</td>
+        <td>{{CreditCard.fecha}}</td>
+       
+        
+      </tr>
+    </tbody>
+  </table>
+
+
